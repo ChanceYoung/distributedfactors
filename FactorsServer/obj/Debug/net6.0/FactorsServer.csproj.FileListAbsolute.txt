@@ -1,0 +1,15 @@
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\FactorsServer.exe
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\FactorsServer.deps.json
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\FactorsServer.runtimeconfig.json
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\FactorsServer.dll
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\ref\FactorsServer.dll
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\bin\Debug\net6.0\FactorsServer.pdb
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.csproj.AssemblyReference.cache
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.AssemblyInfoInputs.cache
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.AssemblyInfo.cs
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.csproj.CoreCompileInputs.cache
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.dll
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\ref\FactorsServer.dll
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.pdb
+C:\Users\eric.young\projects\distributed-factor-caching\FactorsServer\obj\Debug\net6.0\FactorsServer.genruntimeconfig.cache
