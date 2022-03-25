@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsClient", "FactorsClient\FactorsClient.csproj", "{FC3A3CE3-BECF-4DE6-9578-9B6AC31C9948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsServer", "FactorsServer\FactorsServer.csproj", "{373EB43D-6CD7-4024-98EC-C538B0F8B62B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC3A3CE3-BECF-4DE6-9578-9B6AC31C9948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3A3CE3-BECF-4DE6-9578-9B6AC31C9948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3A3CE3-BECF-4DE6-9578-9B6AC31C9948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3A3CE3-BECF-4DE6-9578-9B6AC31C9948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
