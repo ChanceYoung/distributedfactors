@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "De2MXYOcGuIiZh4XjiFVQq765rVpB89L78+WiFwGRCTRtsftHToLvRSfF++yON6tz6Ej0wt5CJrwhBaxwSr/dA==",
+  "dgSpecHash": "XRpQt/j/8Ina0hPMxOOKmhII6NUgwN6r67omjtk9LQBlLlQ1fSZ4+ngc7QagWErAO5eIB2aunKx30BwMqOrX9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eric.young\\projects\\distributed-factor-caching\\FactorsClient\\FactorsClient.csproj",
+  "projectFilePath": "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsClient\\FactorsClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
