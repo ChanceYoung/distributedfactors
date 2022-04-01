@@ -23,64 +23,70 @@ class Server
     }
     static void Main()
     {
+
         int requestsPort = 6544;
         UdpClient requestsClient = new UdpClient(requestsPort);
         UTF8Encoding encoding = new UTF8Encoding();
+        Console.WriteLine($"Started the LoadBalancer");
+        Console.WriteLine($"with Encoding UTF8");
+        Console.WriteLine($"Listening for Requests on Port: {requestsPort}");
+
+        //TODO:
+        //take in a client request
+        //take in a worker request
+        //assign workers to workerqueue
+        //assign request processing to a worker in the workerqueue
+        List<IPEndPoint> workers = new List<IPEndPoint>();
+        int clientRequestCount = 0;
         while (true)
         {
-            IPEndPoint requester = new IPEndPoint(0, 0);
+            IPEndPoint requester = new IPEndPoint(IPAddress.Any, 0);
             byte[] requestData = requestsClient.Receive(ref requester);
 
-            // start a thread to respond
-            Task.Run(() =>
+
+            string requestString = encoding.GetString(requestData);
+
+            if (requestString == "RTR")
             {
-                string requestString = encoding.GetString(requestData);
-                string response;
-                byte[] responseData;
-                string cacheCheck = checkCache(requestString);
-                if (cacheCheck != string.Empty)
-                {
-                    response = cacheCheck;
-                }
-                else
-                {
-                    long request = long.Parse(requestString);
-                    List<long> answer = GetPrimeFactors(request);
-                    response = String.Join(',', answer.Select(p => p.ToString()));
-                    lock (cache)
+                workers.Add(requester);
+                Console.WriteLine($"Added Worker to list. Current worker list length: {workers.Count}");
+                Console.WriteLine(workers.First());
+            }
+            else
+            {
+                Console.WriteLine("Processing Client Request...");
+                clientRequestCount += 1;
+                Task.Run(() =>
                     {
-                        cache.Add(requestString, response);
-                    }
-                }
+                        string response;
+                        byte[] responseData;
+                        string cacheCheck = checkCache(requestString);
+                        if (cacheCheck != string.Empty)
+                        {
+                            Console.WriteLine("...retrieving from cache");
+                            response = cacheCheck;
+                            responseData = encoding.GetBytes(response);
+                        }
+                        else
+                        {
+                            Console.WriteLine("...sending to worker");
+                            IPEndPoint worker = workers[clientRequestCount % workers.Count];
+                            Console.WriteLine(worker);
+                            UdpClient workerUDP = new UdpClient();
+                            workerUDP.Send(requestData, requestData.Length, worker);
+                            responseData = workerUDP.Receive(ref worker);
+                            string workerResponse = encoding.GetString(responseData);
+                            lock (cache)
+                            {
+                                cache.Add(requestString, workerResponse);
+                            }
+                        }
 
-                responseData = encoding.GetBytes(response);
-                UdpClient toClient = new UdpClient();
-                toClient.Send(responseData, responseData.Length, requester);
-            });
-        }
-    }
-
-    static List<long> GetPrimeFactors(long product)
-    {
-        if (product <= 1)
-        {
-            throw new ArgumentException();
-        }
-        List<long> factors = new List<long>();
-        // divide out factors in increasing order until we get to 1
-        while (product > 1)
-        {
-            for (long i = 2; i <= product; i++)
-            {
-                if (product % i == 0)
-                {
-                    product /= i;
-                    factors.Add(i);
-                    break;
-                }
+                        UdpClient toClient = new UdpClient();
+                        toClient.Send(responseData, responseData.Length, requester);
+                    });
             }
         }
-        return factors;
     }
 
 }
