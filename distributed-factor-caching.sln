@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsClient", "FactorsCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsServer", "FactorsServer\FactorsServer.csproj", "{373EB43D-6CD7-4024-98EC-C538B0F8B62B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsWorker", "FactorsWorker\FactorsWorker.csproj", "{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{373EB43D-6CD7-4024-98EC-C538B0F8B62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
