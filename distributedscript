@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+dotnet run --project ./NameServer/NameServer.csproj &
+echo "started server"
+for i in {1..4}
+do
+    dotnet run --project ./DataNodes/DataNodes.csproj &
+done
+echo "datanodes up"
+dotnet run --project ./FactorsServer/FactorsServer.csproj &
+echo "loadbalancer"
+for i in {1..4}
+do
+    dotnet run --project ./FactorsWorker/FactorsWorker.csproj &
+done
+echo "lbworkers up"
+# dotnet run --project ./FactorsClient/FactorsClient.csproj --interactive

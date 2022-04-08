@@ -8,8 +8,9 @@ class RequestHandler
     public List<IPEndPoint> availableDataNodes;
     public byte[] requestData;
     public IPEndPoint requester;
+    private IPEndPoint? loadBalancer;
     private List<string> requestFormats = new List<string> { "^[a-z]+:[0-9]+$", "^[a-z]+$", "^[0-9]+$" };
-    private IPEndPoint loadBalancer;
+
     public RequestHandler(List<IPEndPoint> AvailableDataNodes, byte[] RequestData, IPEndPoint Requester, IPEndPoint LoadBalancer)
     {
         availableDataNodes = AvailableDataNodes;
@@ -18,10 +19,25 @@ class RequestHandler
         loadBalancer = LoadBalancer;
     }
 
-    private int getHashFromRequest(string request){
+    private int getHashIndex(string request)
+    {
         string name = request.Split(':')[0];
         int hash = name.GetHashCode();
-        return Math.Abs(hash)
+        hash = Math.Abs(hash);
+        return hash % availableDataNodes.Count;
+    }
+
+    private byte[] createUDPTicket(IPEndPoint ticketEndpoint)
+    {
+        UdpClient ticketUDP = new UdpClient();
+        ticketUDP.Send(requestData, requestData.Length, ticketEndpoint);
+        return ticketUDP.Receive(ref ticketEndpoint);
+    }
+
+    private void sendClientResponse(byte[] responseData, IPEndPoint client)
+    {
+        UdpClient clientUDP = new UdpClient();
+        clientUDP.Send(responseData, responseData.Length, client);
     }
 
     public Func<int> buildTaskFunction(string request)
@@ -39,40 +55,28 @@ class RequestHandler
                         {
                             byte[] responseData;
                             Console.WriteLine("...sending Query to DataNode");
-                            getHashFromRequest(request);
                             Console.WriteLine("DataNode Index");
-                            Console.WriteLine(Math.Abs(hash) % availableDataNodes.Count);
-                            IPEndPoint dataNode = availableDataNodes[ % availableDataNodes.Count];
-                            UdpClient dataNodeUDP = new UdpClient();
-                            dataNodeUDP.Send(requestData, requestData.Length, dataNode);
-                            responseData = dataNodeUDP.Receive(ref dataNode);
-                            UdpClient toClient = new UdpClient();
-                            toClient.Send(responseData, responseData.Length, requester);
+                            Console.WriteLine(getHashIndex(request));
+                            IPEndPoint dataNode = availableDataNodes[getHashIndex(request)];
+                            responseData = createUDPTicket(dataNode);
+                            sendClientResponse(responseData, requester);
                             return 0;
                         };
 
                     case 1:
                         return () =>
                         {
-
-                            // SEND to requester
                             byte[] responseData;
+                            // SEND to requester
                             Console.WriteLine("...sending Query to DataNode");
-                            string name = request.Split(':')[0];
-                            int hash = name.GetHashCode();
                             Console.WriteLine("DataNode Index");
-                            Console.WriteLine(Math.Abs(hash) % availableDataNodes.Count);
-                            IPEndPoint dataNode = availableDataNodes[Math.Abs(hash) % availableDataNodes.Count];
-                            UdpClient dataNodeUDP = new UdpClient();
-                            dataNodeUDP.Send(requestData, requestData.Length, dataNode);
-                            responseData = dataNodeUDP.Receive(ref dataNode);
+                            Console.WriteLine(getHashIndex(request));
+                            IPEndPoint dataNode = availableDataNodes[getHashIndex(request)];
+                            requestData = createUDPTicket(dataNode);
                             //send to LB as new UDPCLIENT
                             //RECIEVE from LB on LBUDPCLIENT                            
-                            UdpClient LoadBalancerUDP = new UdpClient();
-                            LoadBalancerUDP.Send(requestData, requestData.Length, dataNode);
-                            responseData = LoadBalancerUDP.Receive(ref dataNode);
-                            UdpClient toClient = new UdpClient();
-                            toClient.Send(responseData, responseData.Length, requester);
+                            responseData = createUDPTicket(loadBalancer);
+                            sendClientResponse(responseData, requester);
                             return 1;
                         };
 
@@ -82,6 +86,9 @@ class RequestHandler
                             //send to LB as new UDPCLIENT
                             //RECIEVE from LB on LBUDPCLIENT
                             // SEND to requester
+                            byte[] responseData;
+                            responseData = createUDPTicket(loadBalancer);
+                            sendClientResponse(responseData, requester);
                             return 2;
                         };
                 }

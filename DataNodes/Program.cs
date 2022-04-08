@@ -16,7 +16,6 @@ class Server
         Dictionary<string, string> storedNameFavorites = new Dictionary<string, string>();
 
         Console.WriteLine($"Started a new DataNode");
-        Console.WriteLine($"with Encoding UTF8");
         while (true)
         {
             IPEndPoint NSTicket = new IPEndPoint(0, 0);

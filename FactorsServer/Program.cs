@@ -23,13 +23,14 @@ class Server
     }
     static void Main()
     {
-
-        int requestsPort = 6544;
-        UdpClient requestsClient = new UdpClient(requestsPort);
+        int NSPORT = 6545;
+        UdpClient requestsClient = new UdpClient(6544);
         UTF8Encoding encoding = new UTF8Encoding();
+        var data = Encoding.UTF8.GetBytes("LBRTR");
+        requestsClient.Send(data, data.Length, "255.255.255.255", NSPORT);
+
         Console.WriteLine($"Started the LoadBalancer");
-        Console.WriteLine($"with Encoding UTF8");
-        Console.WriteLine($"Listening for Requests on Port: {requestsPort}");
+        Console.WriteLine($"Listening for Requests on Port: {NSPORT}");
 
         //TODO:
         //take in a client request
@@ -50,7 +51,6 @@ class Server
             {
                 workers.Add(requester);
                 Console.WriteLine($"Added Worker to list. Current worker list length: {workers.Count}");
-                Console.WriteLine(workers.First());
             }
             else
             {

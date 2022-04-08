@@ -11,17 +11,10 @@ class Server
         UdpClient requestsClient = new UdpClient(requestsPort);
         UTF8Encoding encoding = new UTF8Encoding();
         Console.WriteLine($"Started the NameServer");
-        Console.WriteLine($"with Encoding UTF8");
         Console.WriteLine($"Listening for Requests on Port: {requestsPort}");
 
-        //TODO:
-        //judge based on request if 
-        // name:number
-        // OR
-        // name
-        // OR
-        // number
         List<IPEndPoint> datanodes = new List<IPEndPoint>();
+        IPEndPoint LoadBalancer = new IPEndPoint(0, 0);
         int clientRequestCount = 0;
         while (true)
         {
@@ -32,12 +25,17 @@ class Server
             if (requestString == "RTR")
             {
                 datanodes.Add(requester);
-                Console.WriteLine($"Added Datanode to list. Current worker list length: {datanodes.Count}");
+                Console.WriteLine($"Added Datanode to list. Current datanode list length: {datanodes.Count}");
+            }
+            else if (requestString == "LBRTR")
+            {
+                LoadBalancer = requester;
+                Console.WriteLine($"Set LoadBalancer to {requester}.");
             }
             else
             {
                 Console.WriteLine("Processing Client Request...");
-                RequestHandler handler = new RequestHandler(datanodes, requestData, requester);
+                RequestHandler handler = new RequestHandler(datanodes, requestData, requester, LoadBalancer);
                 Func<int> taskFunction = handler.buildTaskFunction(requestString);
                 Task.Run(taskFunction);
                 clientRequestCount += 1;
