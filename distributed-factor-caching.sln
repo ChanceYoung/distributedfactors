@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsServer", "FactorsSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorsWorker", "FactorsWorker\FactorsWorker.csproj", "{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataNodes", "DataNodes\DataNodes.csproj", "{A5A60B37-8397-4019-9F66-DEA61DB014F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameServer", "NameServer\NameServer.csproj", "{1BDA1627-D6E8-47F1-8B02-EA3EC187F9A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C99E490-9EDD-40C1-99F1-7F51A547F4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A60B37-8397-4019-9F66-DEA61DB014F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A60B37-8397-4019-9F66-DEA61DB014F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A60B37-8397-4019-9F66-DEA61DB014F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A60B37-8397-4019-9F66-DEA61DB014F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDA1627-D6E8-47F1-8B02-EA3EC187F9A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDA1627-D6E8-47F1-8B02-EA3EC187F9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDA1627-D6E8-47F1-8B02-EA3EC187F9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDA1627-D6E8-47F1-8B02-EA3EC187F9A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        int PORT = 6544;
+        int PORT = 6545;
         UdpClient udpClient = new UdpClient();
         Console.WriteLine("Started new Client");
         while (true)
@@ -18,7 +18,6 @@ class Program
             string message = Encoding.UTF8.GetString(recvBuffer);
             Console.WriteLine(message);
         }
-
     }
 }
 
