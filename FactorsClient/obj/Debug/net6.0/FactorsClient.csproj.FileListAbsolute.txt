@@ -28,3 +28,18 @@ C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsClient\obj\De
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.pdb
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.genruntimeconfig.cache
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsClient\obj\Debug\net6.0\ref\FactorsClient.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\FactorsClient.exe
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\FactorsClient.deps.json
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\FactorsClient.runtimeconfig.json
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\FactorsClient.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\ref\FactorsClient.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\bin\Debug\net6.0\FactorsClient.pdb
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.csproj.AssemblyReference.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.AssemblyInfoInputs.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.AssemblyInfo.cs
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.csproj.CoreCompileInputs.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\ref\FactorsClient.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.pdb
+C:\Users\eric.young\projects\distributedfactors\FactorsClient\obj\Debug\net6.0\FactorsClient.genruntimeconfig.cache

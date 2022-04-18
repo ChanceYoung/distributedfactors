@@ -13,3 +13,18 @@ C:\Users\Chance\Projects\School Projects\distributedfactors\DataNodes\obj\Debug\
 C:\Users\Chance\Projects\School Projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.pdb
 C:\Users\Chance\Projects\School Projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.genruntimeconfig.cache
 C:\Users\Chance\Projects\School Projects\distributedfactors\DataNodes\obj\Debug\net6.0\ref\DataNodes.dll
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.csproj.AssemblyReference.cache
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.AssemblyInfoInputs.cache
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.AssemblyInfo.cs
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.csproj.CoreCompileInputs.cache
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.dll
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\ref\DataNodes.dll
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.pdb
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\DataNodes.exe
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\DataNodes.deps.json
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\DataNodes.runtimeconfig.json
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\DataNodes.dll
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\ref\DataNodes.dll
+C:\Users\eric.young\projects\distributedfactors\DataNodes\bin\Debug\net6.0\DataNodes.pdb
+C:\Users\eric.young\projects\distributedfactors\DataNodes\obj\Debug\net6.0\DataNodes.genruntimeconfig.cache

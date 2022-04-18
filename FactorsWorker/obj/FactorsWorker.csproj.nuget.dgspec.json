@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj": {}
+    "C:\\Users\\eric.young\\projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj": {
+    "C:\\Users\\eric.young\\projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj",
+        "projectUniqueName": "C:\\Users\\eric.young\\projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj",
         "projectName": "FactorsWorker",
-        "projectPath": "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj",
-        "packagesPath": "C:\\Users\\Chance\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chance\\Projects\\School Projects\\distributedfactors\\FactorsWorker\\obj\\",
+        "projectPath": "C:\\Users\\eric.young\\projects\\distributedfactors\\FactorsWorker\\FactorsWorker.csproj",
+        "packagesPath": "C:\\Users\\eric.young\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eric.young\\projects\\distributedfactors\\FactorsWorker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Chance\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eric.young\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

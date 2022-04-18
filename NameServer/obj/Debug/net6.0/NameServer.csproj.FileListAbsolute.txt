@@ -13,3 +13,18 @@ C:\Users\Chance\Projects\School Projects\distributedfactors\NameServer\obj\Debug
 C:\Users\Chance\Projects\School Projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.pdb
 C:\Users\Chance\Projects\School Projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.genruntimeconfig.cache
 C:\Users\Chance\Projects\School Projects\distributedfactors\NameServer\obj\Debug\net6.0\ref\NameServer.dll
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\NameServer.exe
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\NameServer.deps.json
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\NameServer.runtimeconfig.json
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\NameServer.dll
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\ref\NameServer.dll
+C:\Users\eric.young\projects\distributedfactors\NameServer\bin\Debug\net6.0\NameServer.pdb
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.csproj.AssemblyReference.cache
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.AssemblyInfoInputs.cache
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.AssemblyInfo.cs
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.csproj.CoreCompileInputs.cache
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.dll
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\ref\NameServer.dll
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.pdb
+C:\Users\eric.young\projects\distributedfactors\NameServer\obj\Debug\net6.0\NameServer.genruntimeconfig.cache

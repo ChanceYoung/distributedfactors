@@ -1,7 +1,13 @@
 #!/bin/bash
 
+dotnet build ./NameServer/NameServer.csproj
+dotnet build ./DataNodes/DataNodes.csproj
+dotnet build ./FactorsServer/FactorsServer.csproj
+dotnet build ./FactorsWorker/FactorsWorker.csproj
+
 
 dotnet run --project ./NameServer/NameServer.csproj &
+sleep 2 
 echo "started server"
 for i in {1..4}
 do
@@ -9,6 +15,7 @@ do
 done
 echo "datanodes up"
 dotnet run --project ./FactorsServer/FactorsServer.csproj &
+sleep 2 
 echo "loadbalancer"
 for i in {1..4}
 do

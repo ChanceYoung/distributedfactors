@@ -13,3 +13,18 @@ C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsWorker\obj\De
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.pdb
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.genruntimeconfig.cache
 C:\Users\Chance\Projects\School Projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\ref\FactorsWorker.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.csproj.AssemblyReference.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.AssemblyInfoInputs.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.AssemblyInfo.cs
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.csproj.CoreCompileInputs.cache
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\ref\FactorsWorker.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.pdb
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\FactorsWorker.exe
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\FactorsWorker.deps.json
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\FactorsWorker.runtimeconfig.json
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\FactorsWorker.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\ref\FactorsWorker.dll
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\bin\Debug\net6.0\FactorsWorker.pdb
+C:\Users\eric.young\projects\distributedfactors\FactorsWorker\obj\Debug\net6.0\FactorsWorker.genruntimeconfig.cache
